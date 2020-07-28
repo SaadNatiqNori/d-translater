@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <index />
   </div>
 </template>
 
 <script>
+// import axios from "axios";
+// import $ from "jquery";
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import index from "@/components/index.vue";
 
 export default {
+  data: function() {
+    return {};
+  },
+  created: function() {
+    // this.$swal({
+    //   icon: "success",
+    //   title: "سەرکەوتووبوو",
+    //   text: "داواکارییەکەت بەسەرکەوتوویی جێبەجێ کرا"
+    // });
+  },
   name: "Home",
   components: {
-    HelloWorld
+    index
   }
 };
 </script>
